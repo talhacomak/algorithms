@@ -9,7 +9,6 @@ import kotlinx.coroutines.suspendCancellableCoroutine
 import org.junit.Test
 import kotlin.coroutines.resume
 import kotlin.coroutines.resumeWithException
-import kotlinx.coroutines.test.runTest
 
 class SuspendLocation {
 
@@ -19,9 +18,9 @@ class SuspendLocation {
 
         val location: Location = runBlocking { awaitLocation(fusedClient) }
 
-        runTest {
+        /*runTest {
             val location = awaitLocation(fusedClient)
-        }
+        }*/
 
         GlobalScope.launch {
             val location = awaitLocation(fusedClient)

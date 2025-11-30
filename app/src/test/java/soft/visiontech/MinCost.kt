@@ -1,6 +1,6 @@
 package soft.visiontech
 
-import soft.visiontech.uvc_camera.algorithms.Dijkstra.Edge
+import soft.visiontech.algorithms.Dijkstra.Edge
 import java.util.PriorityQueue
 
 class MinCost {
